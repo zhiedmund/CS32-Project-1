@@ -1,14 +1,23 @@
-//
-//  main.cpp
-//  Project1
-//
-//  Created by Edmund Zhi on 4/1/21.
-//
+// gas.cpp
 
 #include <iostream>
+#include <string>
+#include <random>
+#include <utility>
+#include <cstdlib>
+using namespace std;
+#include "Game.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+///////////////////////////////////////////////////////////////////////////
+//  main()
+///////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+      // Create a game
+      // Use this instead to create a mini-game:   Game g(3, 4, 2);
+    Game g(7, 8, 25);
+      // Play the game
+    g.play();
 }
+
